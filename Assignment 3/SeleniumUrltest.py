@@ -40,12 +40,14 @@ Actual = "Your search for 'Ivanti' returned 2 results"
 
 
 driver.find_element(By.XPATH, "//div[@id='cludo-search-results']/div/div[2]/div").click()
-
-driver.find_element(By.XPATH, "//div[@id='navbarNav']/div/div/a").click()
-
-driver.find_element(By.XPATH, "//div[@id='apps-tools']/div[2]/a/span/span[2]").click()
-
-driver.find_element(By.XPATH, "//a[contains(text(),'eConestoga')]").click()
-
 time.sleep(5)
+driver.find_element(By.XPATH, "//div[@id='navbarNav']/div/div/a").click()
+time.sleep(5)
+driver.find_element(By.XPATH, "//div[@id='apps-tools']/div[2]/a/span/span[2]").click()
+time.sleep(5)
+driver.find_element(By.XPATH, "//span[normalize-space()='Chat Now!']").click()
+time.sleep(5)
+driver.find_element(By.XPATH, "//div[@id='cloudlink-chat-overlay-close-button']").click()
+time.sleep(5)
+driver.find_element(By.XPATH, "//a[contains(text(),'eConestoga')]").click()
 driver.close()
